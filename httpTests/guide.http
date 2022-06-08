@@ -1,0 +1,30 @@
+### create
+POST http://localhost:8080/api/v1/guide
+Content-Type: application/json
+
+{
+  "profileId": "4028098181009e590181009e812a0000",
+  "biography": "Men Ism Familya shu joyda oqiganman!",
+  "languages": [
+    {
+      "level": "BEGINNER",
+      "name": "ENGLISH"
+    }
+  ],
+  "price": {
+    "cost": 1000,
+    "currency": "RUB",
+    "type": "DAY"
+  },
+  "secondPhoneNumber": "string",
+  "travelLocations": [
+    {
+      "description": "string",
+      "district": "string",
+      "provence": "string"
+    }
+  ]
+
+}
+
+

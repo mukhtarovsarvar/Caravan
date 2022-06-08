@@ -1,0 +1,58 @@
+###
+#POST http://localhost:8080/api/v1/guide
+POST http://137.184.80.70:8080/api/v1/guide
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "attachId": "string",
+  "biography": "string",
+  "createdDate": "2022-05-31T22:23:22.756Z",
+  "id": "string",
+  "isHiring": true,
+  "languages": [
+    {
+      "createdDate": "2022-05-31T22:23:22.756Z",
+      "id": "string",
+      "level": "BEGINNER",
+      "name": "ENGLISH",
+      "updatedDate": "2022-05-31T22:23:22.756Z"
+    }
+  ],
+  "price": {
+    "cost": 0,
+    "createdDate": "2022-05-31T22:23:22.756Z",
+    "currency": "RUB",
+    "id": "string",
+    "type": "DAY",
+    "updatedDate": "2022-05-31T22:23:22.756Z"
+  },
+  "profileId": "string",
+  "rate": 0,
+  "secondPhoneNumber": "string",
+  "travelLocations": [
+    {
+      "createdDate": "2022-05-31T22:23:22.756Z",
+      "description": "string",
+      "district": "string",
+      "id": "string",
+      "provence": "string",
+      "updatedDate": "2022-05-31T22:23:22.756Z"
+    }
+  ],
+  "updatedDate": "2022-05-31T22:23:22.756Z"
+}
+
+###
+GET http://localhost:8080/api/v1/guide/status/ff808181811f225401811f229ff60006
+
+###
+PUT http://localhost:8080/api/v1/guide/status/ff808181811f225401811f229ff60006
+
+###
+GET http://137.184.80.70:8080/api/v1/guide/ff808181813db8400181432491a3001c
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIrOTk4OTAzMjY2NTI1IiwiaWF0IjoxNjU0NjgyNjAyLCJpc3MiOiJtYXpnaSBwcm9kdWN0aW9uIn0.r0hOSFWp2f995vxY8V8e7ZO-cmvWCvjCazBWVAC52U0
+
+###
+#DELETE http://localhost:8080/api/v1/guide/ff80818181241e380181241f32f20003
+DELETE http://137.184.80.70:8080/api/v1/guide/ff80818181241e380181242fc0900007

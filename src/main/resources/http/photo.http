@@ -1,0 +1,14 @@
+###
+POST http://localhost:8080/api/v1/attach/upload
+#POST http://137.184.80.70:8080/api/v1/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="caravan.jpg"
+
+< /home/us/Downloads/rose.jpeg
+--WebAppBoundary--
+
+###
+#DELETE http://localhost:8080/api/v1/photo/delete/1Q5kjdlQvOp3lsbG0UH85SL5q2YzAIsXH
+DELETE http://137.184.80.70:8080/api/v1/photo/delete/1Q5kjdlQvOp3lsbG0UH85SL5q2YzAIsXH

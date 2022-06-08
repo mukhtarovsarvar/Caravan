@@ -1,0 +1,14 @@
+### Get By Filter
+GET http://localhost/api/v1/trip/filter
+Content-Type: application/json
+
+{
+  "minCost": 0,
+  "maxCost": 5,
+
+  "minPeople": 0,
+  "maxPeople": 5,
+
+  "minRate": 0,
+  "maxRate": 5
+}

@@ -1,0 +1,68 @@
+1. List<District> district(String region); *
+
+2.  get(profileId);   *
+
+3. put(profileId,language(uz,ru,en));  *
+
+4. getIsHiring(guideId);  *
+
+return  true;
+
+
+5. PutIsHiring(guideId);  *
+
+return guideni isHiring  gini jonatamiz;
+
+
+6. getTripByGuideId(guideId,page = 0,size = 15);  *
+
+7. deleteGuideAccount(guideId);
+
+
+class Action(
+
+String title;
+String message;
+Boolean status;
+
+
+agar hammasi ok bosa faqat status true   else message hamda title bo'ladi.
+)
+
+return action;
+
+		Trip (2 ta API)
+
+8. createTrip();  *
+
+Trip class(
+String name;
+ArrayList <Location> travelLocation;
+Integer minPeople;
+Integer maxPeople;
+String desc;
+)   
+
+
+ return tipi:
+
+class Action(
+
+String title;
+String message;
+Boolean status;
+
+agar hammasi ok bosa faqat status true   else message hamda title bo'ladi.  )
+
+
+return action;
+
+
+9. createTripWithPhoto();       *
+
+Arraylist<String> photoList;
+
+
+
+10. createTrip()
+ 

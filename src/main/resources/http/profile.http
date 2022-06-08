@@ -1,0 +1,54 @@
+### Update
+PUT http://localhost/api/v1/profile
+#PUT http://137.184.80.70:8080/api/v1/profile/ff808181811e8bc201811e8d1cf10002
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIrOTk4OTAzMjY2NTI2IiwiaWF0IjoxNjU0NDk4ODUxLCJpc3MiOiJtYXpnaSBwcm9kdWN0aW9uIn0.4Rr1jGVzPh9kKRXAHRxWN_L3rsGV7JQe1upC1ovM2lw
+
+{
+  "birthDate": "04.04.1994",
+  "email": "Valis77@mail.ru",
+  "name": "valijon",
+  "surname": "valiyev",
+  "gender": "MALE",
+  "appLanguage": "uz",
+  "phoneNumber": "+998123456789"
+}
+
+
+###
+PUT http://localhost:8080/api/v1/profile/photo
+
+### Upload Windows
+PUT http://localhost/api/v1/profile/photo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIrOTk4OTAzMjY2NTI2IiwiaWF0IjoxNjU0NDk4ODUxLCJpc3MiOiJtYXpnaSBwcm9kdWN0aW9uIn0.4Rr1jGVzPh9kKRXAHRxWN_L3rsGV7JQe1upC1ovM2lw
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="mazgi.png"
+
+< D:\index.jpg
+--WebAppBoundary--
+
+
+###
+PUT http://localhost:8080/api/v1/profile/photo/ff8081818126ed64018127f836d30009
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="khan.jpg"
+
+< /home/us/Desktop/screen.png
+--WebAppBoundary--
+
+###
+#GET http://localhost:8080/api/v1/profile/ff80818181240ad50181240bdf370002
+GET http://137.184.80.70:8080/api/v1/profile/ff808181813db840018142c4ca1a0011
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIrOTk4OTAzMjY2NTI1IiwiaWF0IjoxNjU0NjgyNjAyLCJpc3MiOiJtYXpnaSBwcm9kdWN0aW9uIn0.r0hOSFWp2f995vxY8V8e7ZO-cmvWCvjCazBWVAC52U0
+
+###
+GET http://137.184.80.70:8080/api/v1/profile/language
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/api/v1/profile/language/ff80818181240ad50181240bdf370002?lang=uz
+Content-Type: application/json
